@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Brandon Marrero</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className='mx-auto text-left w-6/12 space-y-4'>
         <p className="text-yellow-light text-2xl">
