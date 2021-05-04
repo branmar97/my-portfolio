@@ -34,13 +34,6 @@ function MyApp({ Component, pageProps }) {
                 </Link>
                 <span className="text-yellow-light">{"}"}</span>
               </li>
-              <li className="hover:text-yellow-light">
-                <span className="text-yellow-light">{"{"}</span>
-                <Link href="/about">
-                  <a> About </a>
-                </Link>
-                <span className="text-yellow-light">{"}"}</span>
-              </li>
             </ul>
           </nav>
         </div>
