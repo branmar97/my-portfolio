@@ -13,28 +13,28 @@ function MyApp({ Component, pageProps }) {
 
           <nav>
             <ul className="flex flex-row justify-center space-x-4 text-gray-light">
-              <li>
+              <li className="hover:text-yellow-light">
                 <span className="text-yellow-light">{"{"}</span>
                 <Link href="/">
                   <a> Home </a>
                 </Link>
                 <span className="text-yellow-light">{"}"}</span>
               </li>
-              <li>
+              <li className="hover:text-yellow-light">
                 <span className="text-yellow-light">{"{"}</span>
                 <Link href="/portfolio">
                   <a> Portfolio </a>
                 </Link>
                 <span className="text-yellow-light">{"}"}</span>
               </li>
-              <li>
+              <li className="hover:text-yellow-light">
                 <span className="text-yellow-light">{"{"}</span>
                 <Link href="/blog">
                   <a> Blog </a>
                 </Link>
                 <span className="text-yellow-light">{"}"}</span>
               </li>
-              <li>
+              <li className="hover:text-yellow-light">
                 <span className="text-yellow-light">{"{"}</span>
                 <Link href="/about">
                   <a> About </a>
