@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { SocialIcon } from 'react-social-icons';
 
 export default function Home() {
   return (
@@ -30,8 +31,23 @@ export default function Home() {
         <p className="text-gray-light w-8/12">
           I'm a software engineer building responsive web applications with clean and elegant code using HTML/CSS, Ruby on Rails, JavaScript, React and various other tools. I talk about my journey on Twitter and commit my code to Github.
         </p>
-        <div>
-          
+        <div className="space-x-4">
+          <SocialIcon 
+            url="https://github.com/branmar97"
+            bgColor="#f6ba50"
+          />
+          <SocialIcon 
+            url="https://www.linkedin.com/in/brandon-mar/"
+            bgColor="#f6ba50"
+          />
+          <SocialIcon
+            url="https://www.youtube.com/channel/UCPFEuvJgOqd4uWEw1psDktg"
+            bgColor="#f6ba50"
+          />
+          <SocialIcon 
+            url="https://twitter.com/branmar97"
+            bgColor="#f6ba50"
+          />
         </div>
       </div>
     </div>
