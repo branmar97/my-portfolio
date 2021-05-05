@@ -3,7 +3,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="mx-auto my-8 w-11/12">
+    <div className="mx-auto my-8 w-11/12 mb-16">
       <header>
         <div className="flex justify-between my-4 mb-16">
         
