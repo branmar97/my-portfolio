@@ -8,7 +8,7 @@ export default function Portfolio() {
     <div className="mx-auto w-11/12">
       <Head>
         <title>Brandon Marrero | Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <main className="text-off-white">
