@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
+import { format, parseISO, add } from 'date-fns'
 import { blogPosts } from '../lib/data'
 
 export default function Portfolio() {
@@ -19,7 +20,7 @@ export default function Portfolio() {
             {blogPosts.map((item) => (
                 <div className="mb-6 border border-off-white shadow p-5 rounded space-y-2" key={item.slug}>
                     <div className="text-xl font-bold"><Link href={`/blog/${item.slug}`}><a>{item.title}</a></Link></div>
-                    <div>{item.date.toString()}</div>
+                    <div>{format(parseISO(item.date), 'MMMM do, uuu')}</div>
                     <div>{item.content}</div>
                     <div><Link href={`/blog/${item.slug}`}><a><button className="bg-orange-dark hover:bg-orange-light text-off-white text-sm py-2 px-4 rounded mt-3">Read More</button></a></Link></div>
                 </div>
