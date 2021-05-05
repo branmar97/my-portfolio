@@ -14,6 +14,7 @@ export default function Portfolio() {
         <h1 className="text-4xl">
           My Blog
         </h1>
+        <small>Posts ({blogPosts.length})</small>
         <div className="mt-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
             {blogPosts.map((item) => (
                 <div className="mb-6 border border-off-white shadow p-5 rounded space-y-2" key={item.slug}>
