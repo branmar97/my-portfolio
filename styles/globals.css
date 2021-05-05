@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        @apply bg-blue-dark
+    html {
+        @apply bg-gradient-to-b;
+        @apply from-blue-light;
+        @apply to-blue-dark;
+        @apply bg-no-repeat;
+        @apply bg-fixed;
     }
+
+    a {
+        @apply text-orange-dark hover:text-orange-light;
+    }
+
 }
