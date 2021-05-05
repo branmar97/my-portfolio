@@ -24,6 +24,15 @@ module.exports = {
       },
       yellow: {
         light: '#f6ba50'
+      },
+      orange: {
+        light: '#f7d395',
+        dark: '#f6ba50'
+      },
+      white: '#ffffff',
+      black: '#000000',
+      off: {
+        white: '#f9fafb'
       }
     },
     extend: {},
