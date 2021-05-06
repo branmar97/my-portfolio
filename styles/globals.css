@@ -15,4 +15,35 @@
         @apply text-orange-dark hover:text-orange-light transition duration-500 ease-in-out;
     }
 
+    .cms-content h1 {
+        @apply text-orange-dark text-4xl font-bold mt-4 mb-4;
+    }
+
+    .cms-content h2 {
+        @apply text-orange-dark text-3xl font-bold mt-4 mb-4;
+    }
+
+    .cms-content h3 {
+        @apply text-orange-dark text-2xl font-bold mt-4 mb-4;
+    }
+
+    .cms-content h4 {
+        @apply text-orange-dark text-xl font-bold mt-4 mb-4;
+    }
+
+    .cms-content h5 {
+        @apply text-orange-dark text-lg font-bold mt-4 mb-4;
+    }
+
+    .cms-content h6 {
+        @apply text-orange-dark text-base font-bold mt-4 mb-4;
+    }
+
+    .cms-content li {
+        @apply list-disc ml-8;
+    }
+
+    .cms-content p {
+        @apply mt-4 mb-4;
+    }
 }
