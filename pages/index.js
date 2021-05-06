@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { SocialIcon } from 'react-social-icons';
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
         <title>Brandon Marrero</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div className='mx-auto text-left w-10/12 sm:w-9/12 md:w-8/12 space-y-4'>
+      <div className='max-w-5xl mx-auto px-6 lg:px-0 space-y-4'>
         <p className="text-yellow-light text-2xl">
           Hello, my name is
         </p>
@@ -20,13 +19,7 @@ export default function Home() {
           {"<Software Engineer />"}
         </h2>
         <div>
-          <Image 
-            src="https://i.ibb.co/MP78m36/pic.jpg"
-            alt="Photo of Brandon Marrero"
-            width={250}
-            height={250}
-            className="rounded-full"
-          />
+          <img src="/images/pic.jpeg" alt="Photo of Brandon Marrero" className="rounded-full" />
         </div>
         <p className="text-off-white w-96">
           I'm building responsive web applications with clean and elegant code using HTML/CSS, Ruby on Rails, JavaScript, React and other tools. I talk about my journey on Twitter and commit my code to Github.
