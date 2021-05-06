@@ -7,7 +7,7 @@ import { getAllPosts } from '../../lib/data';
 
 export default function PostPage({ title, date, content }) {
   return (
-    <div className="mx-auto w-11/12 md:w-10/12 lg:w-9/12 xl:w-7/12 2xl:w-6/12">
+    <div className="max-w-5xl mx-auto">
       <Head>
         <title>Brandon Marrero | {title}</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
