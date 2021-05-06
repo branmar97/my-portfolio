@@ -21,7 +21,7 @@ export default function Home() {
         </h2>
         <div>
           <Image 
-            src="/../public/images/pic.jpeg"
+            src="https://i.ibb.co/MP78m36/pic.jpg"
             alt="Photo of Brandon Marrero"
             width={250}
             height={250}
