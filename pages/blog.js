@@ -12,10 +12,12 @@ export default function Blog({ posts }) {
       </Head>
 
       <main className="text-off-white">
-        <h1 className="text-4xl">
-          My Blog
-        </h1>
-        <small>Posts ({posts.length})</small>
+        <div className="border-b-2 border-gray-light mb-10">
+          <h1 className="text-4xl">
+            My Blog
+          </h1>
+           <p className="mb-2"><small>Posts ({posts.length})</small></p>
+        </div>
         <div className="mt-6 grid md:grid-cols-1 lg:grid-cols-2 gap-20 justify-items-center">
             {posts.map((item) => (
                 <div className="bg-black bg-opacity-25 shadow hover:shadow-2xl transition duration-500 ease-in-out rounded space-y-4 text-center justify-center p-8 max-w-xl" key={item.slug}>

@@ -10,9 +10,15 @@ export default function Portfolio() {
 
       <main className="text-off-white">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl mb-6">
-            Portfolio
-          </h1>
+          <div className="border-b-2 border-gray-light mb-10">
+            <h1 className="text-4xl">
+              Portfolio
+            </h1>
+            <p className="mb-2">
+              <small>View my projects with images, brief descriptions and links below</small>
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div className="bg-black bg-opacity-25 shadow hover:shadow-2xl transition duration-500 ease-in-out rounded space-y-6 text-center justify-center p-8 max-w-xl">
               <h2 className="text-3xl font-bold mb-4">Apex Link</h2>
