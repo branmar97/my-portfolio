@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link';
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
 import { format, parseISO, add } from 'date-fns'
-import { blogPosts } from '../../lib/data';
+import { getAllPosts } from '../../lib/data';
 
 export default function PostPage({ title, date, content }) {
   return (
@@ -20,7 +22,7 @@ export default function PostPage({ title, date, content }) {
             </h1>
             <p className="text-gray-light text-sm mb-2">{format(parseISO(date), 'MMMM do, uuu')}</p>
           </div>
-          <p>{content}</p>
+          <div className="cms-content"><MDXRemote {...content} /></div>
         </div>
       </main>
     </div>
@@ -29,17 +31,23 @@ export default function PostPage({ title, date, content }) {
 
 export async function getStaticProps(context) {
     const { params } = context;
+    const allPosts = getAllPosts()
+    const { data, content } = allPosts.find((post) => post.slug === params.slug)
+    const mdxSource = await serialize(content)
     return {
-        props: blogPosts.find((item) => item.slug === params.slug),
+        props: {
+          ...data,
+          date: data.date.toISOString(),
+          content: mdxSource,
+        }
     };
 }
 
 export async function getStaticPaths() {
-    
     return {
-        paths: blogPosts.map((item) => ({
+        paths: getAllPosts().map((post) => ({
             params: {
-                slug: item.slug,
+                slug: post.slug,
             },
         })),
         fallback: false,
