@@ -19,7 +19,7 @@ export default function Home() {
           {"<Software Engineer />"}
         </h2>
         <div>
-          <img src="/images/pic.jpeg" alt="Photo of Brandon Marrero" className="rounded-full" />
+          <img src="/images/pic.jpeg" alt="Photo of Brandon Marrero" className="rounded-full" width="250" />
         </div>
         <p className="text-off-white w-96">
           I'm building responsive web applications with clean and elegant code using HTML/CSS, Ruby on Rails, JavaScript, React and other tools. I talk about my journey on Twitter and commit my code to Github.
